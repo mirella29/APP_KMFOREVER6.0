@@ -1,0 +1,508 @@
+ /*-----------------------------------*\
+        #CUSTOM PROPERTY
+ \*-----------------------------------*/
+
+ :root{
+   --section-padding: 30px;
+   --fontSize-1:2.4rem;
+   --text-alice-blue:hsla(216, 100%, 95%, 1);
+   --weight-bold: 800;
+   --weight-extraBold: 800;
+   --text-alice-blue: hsla(216, 100%, 95%, 1);
+   --text-columbia-blue: hsla(199, 69%, 84%, 1);
+   --bg-oxford-blue: rgb(49,101,233);
+ }
+
+
+ body{
+    font-family: Arial, sans-serif;
+    margin:0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+ }
+
+ header {
+   /* text-align: center;*/
+    padding: 0px;
+    background-color: var(--bg-oxford-blue);
+}
+
+.post{
+   display: flex;
+   padding: 0px;
+   width: 100vw;
+   margin-top: 40px;
+
+
+}
+.section{
+padding-block: 20px;
+}
+
+.hero {
+   padding-block-start: 22px;
+}
+.q{
+   display: flex;
+   flex-direction: column;
+   background-color: #eef2f7;
+   padding-block: 20px;
+}
+.sub .biografia{
+   width: 100vw; /* Ocupa todo el ancho de la pantalla */
+   max-width: 100%; /* Evita restricciones de ancho */
+   margin: 0; /* Elimina márgenes */
+   padding: 20px; /* Agrega espacio interno */
+   box-sizing: border-box; /* Asegura que padding no afecte el tamaño total */
+   background-color: #767677;
+}
+header img{
+   max-width: 100%;
+   height: auto;
+   border-radius: 10px;
+}
+.hero{
+   position: relative;
+   /*overflow: hidden; Evita que las animaciones sobresalgan */
+}
+.hero_container .shp {
+   z-index: -1;
+}
+.hero .shp{
+   position: absolute;
+   z-index: 1;
+   width: 100px;
+   height: auto;
+  /* opacity: 0.7;*/
+  /* animation: float 6s infinite alternate ease-in-out;*/
+}
+.shp {
+   display: block;
+
+   z-index: -1;
+   animation: DecoAnim 3s linear infinite alternate;
+}
+
+ 
+
+
+@keyframes DecoAnim {
+   0% { transform: translateY(40px) rotate(0);}
+   100% { transform: translateY(0) rotate(0.4turn);}
+}
+/*
+.hero-bg{
+display: block;
+position: absolute;
+pointer-events: none;
+}*/
+.hero .shp-1{
+   top: 50px;
+   right: 40px;
+}
+.hero .shp-2{
+   bottom: 50px;
+   left: 80px;
+   }
+   
+main{
+   padding: var(--section-padding);
+   background-color: var(--bg-oxford-blue);
+}
+
+.content {
+   max-width: 1200px;
+   margin: 0 auto;
+} 
+
+
+.biografia{
+   text-align: center;
+   margin-bottom: 22px;
+}
+
+h3 .resena .favorite {
+   display: flex;
+   margin-bottom: 20px;
+   flex-wrap: nowrap;
+   font-size: 1.17em;
+   align-items: center;
+}
+
+h3{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+ /* Diseño principal de la biografia con Grid */
+
+.hero{
+   position: relative;
+   padding-block-start: calc(var(--section-padding)+2px);
+ 
+}
+
+ .hero .conteiner {
+   grid-template-columns: 1fr 1fr;
+   padding-inline: 18px;
+   max-width: 1200px;
+   background-color: #185ef541;
+ }
+
+ .hero .text {
+   margin-inline-end: 2vw;
+   background-color: var(--bg-oxford-blue);
+   border-radius: 10px;
+   padding: 10px;
+   color: #1a1818; /*#555 #272626*/
+   line-height: 1.6;
+   font-weight: bold;
+
+ }
+
+.headline .span{
+   background-image: linear-gradient(90deg, #5DFF3E, #96FF86 51%);
+  /* display: inline-block;*/
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+}
+.headline-1{
+   font-size: var(--fontSize-1);
+   /*color: var(--text-alice-blue);*/
+   color: var(--bg-oxford-blue);
+   font-weight: var(--weight-extraBold);
+}
+ .hero_subtitle{
+   font-size: 14px;
+   font-weight: 5px;
+ }
+.span .nombre{
+  /* background-image: linear-gradient(90deg, #5DFF3E, #96FF86 51%);*/
+  font-size: var(--fontSize-6);
+  font-weight: var(--weight-bold);
+  font-size: 40px;
+
+}
+
+.nombre{
+   font-size: 52px;
+ 
+}
+
+.headline-1{
+
+   color: var(--text-alice-blue);
+   font-weight: var(--weight-extraBold);
+}
+.section-title{
+   margin-block-end: 10px;
+}
+.hero .section-title{
+   margin-block: 40px;
+}
+
+
+.hero .hero_banner {
+  /* margin-inline-end: 2vw;*/
+
+}
+
+ .hero_container{
+   display: grid;  
+   grid-template-columns: 1fr 1fr;
+
+}
+ .biografia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+
+ }
+
+/*
+ .texto{
+    flex: 1 ; 
+    min-width: 300px;
+   
+ }*/
+
+ 
+
+ img {height: auto;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(15,15,15 .5 );
+
+ }
+
+/*MAIN*/
+
+.section .content{
+   display: grid;
+   margin: 0;
+   padding: 0;
+}
+
+.content .biografia{
+   max-width: 740px;
+   margin: auto;
+
+}
+.content {
+   margin: 0 auto;
+}  
+.subtitle{
+   font-size: 24px;
+   color: #007BFF;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+@media (max-width:768px) {
+   .sub {
+      padding: 15px;
+   }
+   .subtitle{
+      font-size: 40px;
+   }
+ 
+   .hero {
+      margin-block: 0;
+   }
+   .biografia {
+      width: 100vw;
+      max-width: 100%;
+   }
+}
+
+.box{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+.box-1 , .box-2 {
+   flex-wrap: wrap;
+}
+
+.resena{
+   flex: 1;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px rgba(15,15,15 .5 );
+   color: #1a1818;
+   line-height: 1.6;
+   font-weight: bold;
+
+}
+
+.imagen img{
+   max-width: 100%;
+   border-radius: 10px;
+}
+
+.box-1 , .favorite-song-container{
+   flex-wrap: wrap;
+}
+ 
+.biografia{
+   text-align: center;
+   margin-bottom: 30px;
+   color:#1a1818;;
+   line-height: 1.6;
+   font-weight: bold;
+
+}
+
+
+.favorite-song-container {
+   display: flex;
+   gap: 20px;
+   flex-direction: row;
+   align-items: center;
+}
+
+
+/*Ajustes de estilo para el texto */
+.favorite-song-text{
+   flex: 1;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px rgba( );
+}
+
+.favorite-song-image{
+   flex: 1;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 10px;
+   text-align: 10px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.favorite-song-image img {
+   max-width: 100%;
+   border-radius: 10px;
+}
+
+/*
+.img{
+   padding: 20px;
+   background-color: #ffffff;
+   border-radius: 10px;
+   text-align: center;
+}
+
+
+*/
+
+/*
+.figure{
+   display: flex;
+   margin-block-start: 1em;
+   margin-inline-end: 1em;
+   margin-inline-start: 40px;
+   margin-inline-end: 40px;
+   
+}*/
+/*
+.box .box-1{
+   grid-template-columns: 1fr 1fr;
+}
+
+
+.box .box-2{
+   grid-template-columns: 1fr 1fr;
+}*/
+
+@media (max-width: 768px) {
+   .text .imagen .resena .img .favorite-song-container .favorite-song-image {
+      min-width: 100%;
+   }
+   .box{
+      flex-direction: column;
+      margin-bottom: 5px;
+   }
+   
+   .resena{
+      margin-bottom: 20px;
+   }
+
+   .favorite-song-container{
+      flex-direction: column; /* Cambiar a una sola columna */
+   }
+
+   .favorite-song-text,
+   .favorite-song-image {
+      margin-bottom: 20px;  /* Espaciado entre bloques */
+   }
+
+
+}
+
+
+
+ /*--------------------*\
+   #Reset
+ \*--------------------*/
+
+ *,
+ *::before,
+ *::after {
+ 
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ li{
+    list-style: none ; 
+ }
+
+ a,img, input,span, button, ion-icon {
+    display: block;
+ }
+
+
+
+
+ .img-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+
+ .header .btn{
+    display: none;
+ }
+
+ 
+
+
+.w-100 {
+width: 100%;
+}
+
+
+
+.hero .shape {
+    position: absolute;
+    z-index: -1;
+
+    animation: heroDecoAnim 3s linear infinite alternate;
+}
+
+.hero .container {
+  /* grid-template-columns: 1fr 1fr;
+   align-items: stretch;*/
+   padding: 20px;
+}
+
+.portada {
+    width: 100vw ; 
+    max-width: 800px ; 
+    min-width: 320px;
+   /* margin: auto;*/
+   display: flex;
+   margin: auto;
+  /* margin-top: 5px;*/
+   justify-content: space-between;
+ }
+
+ .portada .shape .shape-1{
+
+ }
+
+
+
+@media (-min-width: 575px){
+
+
+    /*
+        #REUSED STYLE   
+    */
+    
+    .portada{
+      max-width: 1200px; 
+      width: 100%;
+      margin: auto;
+     
+  }
+
+  .portada .shape .shape-1{
+      max-width: 1200px; 
+      width: 100%;
+      margin-inline: auto ;
+  }
+
+
+   .container {
+      max-width: 540px;
+      width: 100%;
+      margin-inline: auto;      
+   }
+    
+    }
